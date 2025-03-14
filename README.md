@@ -59,3 +59,14 @@ Time-series information:
 
 
 
+## To-Do
+
+- [ ] Test IFC tiler https://github.com/VCityTeam/py3dtilers?tab=readme-ov-file
+- [ ] Test pointcloud tiler https://gitlab.com/py3dtiles/py3dtiles
+- [ ] Contact paradigm for 3d construction converstion to cityjson
+- [ ] Test cityjson tiler https://github.com/3DGI/tyler
+
+
+
+
+
