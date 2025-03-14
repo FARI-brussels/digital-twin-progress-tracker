@@ -1,5 +1,5 @@
 Name,Description,Provider,Type,Implemented,URL,Format,Update Frequency,Harvester,Priority
-Vehicle Position,Real-time train positions,SNCB,Telemetry,True,,GeoJSON,30 second,SNCBVehiclePositionGeometryHarvester,
-3D Constructions,LoD 2.2 3D construction,Paradigm,Mesh,False,https://datastore.brussels/web/data/dataset/e9ec2aa4-cffd-11ee-bccc-00090ffe0001#access,SHP/DWG/GPKG/SKP,1 month,,high
-lidar brussels,LiDAR aérien – 2021,Paradigm,point cloud,False,https://datastore.brussels/web/data/dataset/ff1124e1-424e-11ee-b156-00090ffe0001#access,las,unknown,,low
-google maps traffic layer,Raster of the real time traffic congestion (I guess it is related to the average speed of vehicules). It would be nice to write a harvester that get the color of each segment of street in brussels and save that in db),Google,raster,False,https://developers.google.com/maps/documentation/javascript/examples/layer-traffic#maps_layer_traffic-javascript,webp,1 minute,,low
+Vehicle Position,Real-time train positions,SNCB,Telemetry,True,,GeoJSON,30 second,SNCBVehiclePositionGeometryHarvester,0
+3D Constructions,LoD 2.2 3D construction,Paradigm,Mesh,False,https://datastore.brussels/web/data/dataset/e9ec2aa4-cffd-11ee-bccc-00090ffe0001#access,SHP/DWG/GPKG/SKP,1 month,,1
+lidar brussels,LiDAR aérien – 2021,Paradigm,point cloud,False,https://datastore.brussels/web/data/dataset/ff1124e1-424e-11ee-b156-00090ffe0001#access,las,unknown,,3
+google maps traffic layer,Raster of the real time traffic congestion (I guess it is related to the average speed of vehicules). It would be nice to write a harvester that get the color of each segment of street in brussels and save that in db),Google,raster,False,https://developers.google.com/maps/documentation/javascript/examples/layer-traffic#maps_layer_traffic-javascript,webp,1 minute,,3
