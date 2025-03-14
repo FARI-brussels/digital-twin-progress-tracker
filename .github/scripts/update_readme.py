@@ -11,7 +11,7 @@ if not os.path.exists('assets'):
 data = pd.read_csv('data.csv')
 
 # Calculate implementation stats
-implemented_count = sum(data['implemented'].map(lambda x: str(x).lower() == 'true'))
+implemented_count = sum(data['Implemented'].map(lambda x: str(x).lower() == 'true'))
 not_implemented_count = len(data) - implemented_count
 implementation_percentage = round((implemented_count / len(data)) * 100, 2)
 
