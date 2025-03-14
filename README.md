@@ -18,8 +18,6 @@
 
 ### Type of data 
 
-### Type of data 
-
 #### Vector data
 Geometric objects with coordinates and attributes:
 - Lines (roads, pipes, cables)
