@@ -4,17 +4,19 @@
 
 
 
-| Name             | Description               | Provider   | Type        | Implemented   | Url                                                                                     | Format           | Update frequency   | Harvester                            | Priority   |
-|:-----------------|:--------------------------|:-----------|:------------|:--------------|:----------------------------------------------------------------------------------------|:-----------------|:-------------------|:-------------------------------------|:-----------|
-| 3D Constructions | LoD 2.2 3D construction   | Paradigm   | Mesh        | ❌ No          | https://datastore.brussels/web/data/dataset/e9ec2aa4-cffd-11ee-bccc-00090ffe0001#access | SHP/DWG/GPKG/SKP | 1 month            | nan                                  | High       |
-| lidar brussels   | LiDAR aérien – 2021       | Paradigm   | point cloud | ❌ No          | https://datastore.brussels/web/data/dataset/ff1124e1-424e-11ee-b156-00090ffe0001#access | las              | unknown            | nan                                  | low        |
-| Vehicle Position | Real-time train positions | SNCB       | Telemetry   | ✅ Yes         | nan                                                                                     | GeoJSON          | 30 seconds         | SNCBVehiclePositionGeometryHarvester | nan        |
+
+| Name                      | Description                                                                                                                                                                                                               | Provider   | Type        | Implemented   | Url                                                                                                              | Format           | Update frequency   | Harvester                            | Priority   |
+|:--------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------|:------------|:--------------|:-----------------------------------------------------------------------------------------------------------------|:-----------------|:-------------------|:-------------------------------------|:-----------|
+| 3D Constructions          | LoD 2.2 3D construction                                                                                                                                                                                                   | Paradigm   | Mesh        | ❌ No          | https://datastore.brussels/web/data/dataset/e9ec2aa4-cffd-11ee-bccc-00090ffe0001#access                          | SHP/DWG/GPKG/SKP | 1 month            | nan                                  | high       |
+| lidar brussels            | LiDAR aérien – 2021                                                                                                                                                                                                       | Paradigm   | point cloud | ❌ No          | https://datastore.brussels/web/data/dataset/ff1124e1-424e-11ee-b156-00090ffe0001#access                          | las              | unknown            | nan                                  | low        |
+| google maps traffic layer | Raster of the real time traffic congestion (I guess it is related to the average speed of vehicules). It would be nice to write a harvester that get the color of each segment of street in brussels and save that in db) | Google     | raster      | ❌ No          | https://developers.google.com/maps/documentation/javascript/examples/layer-traffic#maps_layer_traffic-javascript | webp             | 1 minute           | nan                                  | low        |
+| Vehicle Position          | Real-time train positions                                                                                                                                                                                                 | SNCB       | Telemetry   | ✅ Yes         | nan                                                                                                              | GeoJSON          | 30 second          | SNCBVehiclePositionGeometryHarvester | nan        |
 
 ## Implementation Status
 
-![Implementation Status](assets/implementation_chart.svg)
+![Implementation Status](assets/implementation-chart.svg)
 
-**1 out of 3 resources implemented (33.33%)**
+**1 out of 4 resources implemented (25.0%)**
 
 ## Description
 
