@@ -67,7 +67,7 @@ except ImportError:
     markdown_table = "\n".join([header_line, separator_line] + rows)
 
 # Implementation status content
-implementation_status_content = f"""![Implementation Status](assets/implementation_chart.svg)
+implementation_status_content = f"""![Implementation Status](assets/implementation-chart.svg)
 
 **{implemented_count} out of {len(data)} resources implemented ({implementation_percentage}%)**
 """
