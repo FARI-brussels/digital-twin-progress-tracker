@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import re
 
 # Create assets directory if it doesn't exist
 if not os.path.exists('assets'):
@@ -49,27 +50,64 @@ except:
     pass  # Skip sorting if Priority is not numerical
 
 # Convert DataFrame to markdown table
-markdown_table = data.to_markdown(index=False)
+try:
+    # Try using to_markdown if tabulate is installed
+    markdown_table = data.to_markdown(index=False)
+except ImportError:
+    # Fallback to manual markdown table creation if tabulate is not available
+    headers = data.columns.tolist()
+    header_line = "| " + " | ".join(headers) + " |"
+    separator_line = "| " + " | ".join(["---" for _ in headers]) + " |"
+    
+    rows = []
+    for _, row in data.iterrows():
+        row_values = [str(val) for val in row.tolist()]
+        rows.append("| " + " | ".join(row_values) + " |")
+    
+    markdown_table = "\n".join([header_line, separator_line] + rows)
 
-# Create README content
-readme_content = f"""# Data Resources Dashboard
+# Implementation status content
+implementation_status_content = f"""![Implementation Status](assets/implementation_chart.svg)
+
+**{implemented_count} out of {len(data)} resources implemented ({implementation_percentage}%)**
+"""
+
+# Read the existing README.md file
+try:
+    with open('README.md', 'r') as f:
+        readme_content = f.read()
+except FileNotFoundError:
+    # Create a basic README if it doesn't exist
+    readme_content = """# Project Dashboard
 
 ## Implementation Status
 
-![Implementation Status](assets/implementation_chart.svg)
+Implementation status will be inserted here.
 
-**{implemented_count} out of {len(data)} resources implemented ({implementation_percentage}%)**
+## Data Sources
 
-## Available Data Resources
-
-{markdown_table}
-
----
-
-*This dashboard is automatically generated based on data.csv*
+Data sources table will be inserted here.
 """
 
-# Write to README.md
+# Update the Implementation Status section
+if '## Implementation Status' in readme_content:
+    pattern = r'(## Implementation Status\s*\n)[\s\S]*?(?=\n##|\Z)'
+    replacement = r'\1' + implementation_status_content
+    readme_content = re.sub(pattern, replacement, readme_content)
+else:
+    # Add Implementation Status section if it doesn't exist
+    readme_content += f"\n\n## Implementation Status\n\n{implementation_status_content}"
+
+# Update the Data Sources section
+if '## Data Sources' in readme_content:
+    pattern = r'(## Data Sources\s*\n)[\s\S]*?(?=\n##|\Z)'
+    replacement = r'\1\n' + markdown_table + '\n'
+    readme_content = re.sub(pattern, replacement, readme_content)
+else:
+    # Add Data Sources section if it doesn't exist
+    readme_content += f"\n\n## Data Sources\n\n{markdown_table}\n"
+
+# Write the updated content back to README.md
 with open('README.md', 'w') as f:
     f.write(readme_content)
 

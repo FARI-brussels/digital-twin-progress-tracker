@@ -1,10 +1,4 @@
-# Data Resources Dashboard
-
-## Implementation Status
-
-![Implementation Status](assets/implementation_chart.svg)
-
-**0 out of 2 resources implemented (0.0%)**
+# Fari digital twin progress tracker
 
 ## Available Data Resources
 
@@ -15,4 +9,11 @@
 
 ---
 
-*This dashboard is automatically generated based on data.csv*
+## Implementation Status
+
+![Implementation Status](assets/implementation_chart.svg)
+
+**0 out of 2 resources implemented (0.0%)**
+
+
+## Description
