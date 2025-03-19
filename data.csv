@@ -1,6 +1,20 @@
-Name,Description,Provider,Type,Implemented,URL,Format,Update Frequency,Harvester,Priority
-Vehicle Position,Real-time train positions,SNCB,Telemetry,True,,GeoJSON,30 second,SNCBVehiclePositionGeometryHarvester,0
-3D Constructions,LoD 2.2 3D construction,Paradigm,Mesh,False,https://datastore.brussels/web/data/dataset/e9ec2aa4-cffd-11ee-bccc-00090ffe0001#access,SHP/DWG/GPKG/SKP,1 month,,1
-lidar brussels,LiDAR aérien – 2021,Paradigm,point cloud,False,https://datastore.brussels/web/data/dataset/ff1124e1-424e-11ee-b156-00090ffe0001#access,las,unknown,,3
-google maps traffic layer,Raster of the real time traffic congestion (I guess it is related to the average speed of vehicules). It would be nice to write a harvester that get the color of each segment of street in brussels and save that in db),Google,raster,False,https://developers.google.com/maps/documentation/javascript/examples/layer-traffic#maps_layer_traffic-javascript,webp,1 minute,,3
-Vehicle Position,Real-time metro/bus/tram positions,STIB,Telemetry,True,,GeoJSON,20 seconds,STIBVehiclePositionGeometryHarvester,0 
+Name,Description,Provider,Type,Implemented,URL,Format,Update Frequency,Harvester,Collector,Priority
+Vehicle Position,Real-time train positions,SNCB,Telemetry,True,,GeoJSON,30 second,SNCBVehiclePositionGeometryHarvester,,0
+3D Constructions,LoD 2.2 3D construction,Paradigm,Mesh,False,https://datastore.brussels/web/data/dataset/e9ec2aa4-cffd-11ee-bccc-00090ffe0001#access,SHP/DWG/GPKG/SKP,1 month,,,1
+lidar brussels,LiDAR aérien – 2021,Paradigm,point cloud,False,https://datastore.brussels/web/data/dataset/ff1124e1-424e-11ee-b156-00090ffe0001#access,las,unknown,,,3
+google maps traffic layer,Raster of the real time traffic congestion (I guess it is related to the average speed of vehicules). It would be nice to write a harvester that get the color of each segment of street in brussels and save that in db),Google,raster,False,https://developers.google.com/maps/documentation/javascript/examples/layer-traffic#maps_layer_traffic-javascript,webp,1 minute,,,3
+Vehicle Position,Real-time metro/bus/tram positions,STIB,Telemetry,True,,GeoJSON,20 seconds,STIBVehiclePositionGeometryHarvester,,0 
+Operationnals Points (Stops) INFRABEL,The operational points of the railway network in Belgium,Infrabel,Vector data,True,,GeoJSON,Everyday at 01:15,,InfrabelOperationalPointsCollector,0
+Line sections INFRABEL,Segmentation of the rail network according to the characteristics of the infrastructure and the possibilities of operation. This list includes the route and technical characteristics of the line sections. More precise than line SNCB,Infrabel,Vector data,True,,GeoJSON,Everyday at 02:20,,InfrabelLineSectionCollector,0
+Segments Infrabel,The segments of the SNCB network in Belgium.,Infrabel,Vector data,True,,GeoJSON,Everyday at 01:45,,InfrabelSegmentsCollector,0
+Vehicle speed,The average speed of the vehicles of STIB/MIVB on a 20 seconds interval, per line, stop and direction.,STIB,Temetry,True,,JSON,20 seconds,StibSegmentsSpeedHarvester,,0
+Vehicle Aggregated Speed,The average speed of the vehicles of STIB/MIVB on a 10 minutes interval, per line, stop and direction.,STIB,Temetry,True,,JSON,10 minutes,StibSegmentsAggregatedSpeedHarvester,,0
+Segments,The segments of the STIB/MIVB network.,STIB,Vector data,True,,GeoJSON,,STIBSegmentsHarvester,,0
+Stops,The stops of STIB/MIVB.,STIB,Vector data,True,,GeoJSON,Everyday at 00:20,,STIBStopsCollector,0
+Vehicle distance,This endpoint returns the distance of each vehicle since the last stop.,STIB,Temetry,True,,JSON,20 seconds,,STIBVehiclePositionsCollector,0
+Shapefile,The shapefile of STIB/MIVB,STIB,Vector data,True,,GeoJSON,Everyday at 03:20,,STIBShapeFilesCollector,0
+Vehicle Position Lime,The vehicles position of Lime in Brussels,Lime,Vector data,True,,GeoJSON,5 minutes,,LimeVehiclePositionCollector,0
+Vehicle Position Pony,The vehicles position of Pony in Brussels,Pony,Vector data,True,,GeoJSON,5 minutes,,PonyVehiclePositionCollector,0
+Vehicle Position Dott,The vehicles position of Dott in Brussels,Dott,Vector data,True,,GeoJSON,5 minutes,,DottVehiclePositionCollector,0
+Vehicle Position Bolt,The vehicles position of Bolt in Brussels,Bolt,Vector data,True,,GeoJSON,5 minutes,,BoltVehiclePositionCollector,0
+Weather,The environment component provides some information about the environment in Brussels. It uses OpenWeather data to provide the weather for Brussels. An other endpoint provides the air quality data for Brussels (provided by Irceline).,OpenWeather,Vector data,True,,GeoJSON,5 minutes,,OpenWeatherCollector,0
