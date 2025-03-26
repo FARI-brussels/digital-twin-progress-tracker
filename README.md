@@ -92,5 +92,22 @@ Time-series information:
 
 
 
+## Ressource
+- https://projet.liris.cnrs.fr/vcity/
+- https://www.geoscity.uliege.be/cms/c_12409035/en/geoscity
 
+## Other DT examples
+
+- https://www.digitalurbantwins.com/
+- https://transfer.hft-stuttgart.de/pages/ensysle/application/Dithmarschen/index.html
+- https://bremen.virtualcitymap.de/#/
+- https://soest.virtualcitymap.de/#/3drouteMenue
+- https://www.virtualcitymap.de/ (flooding simulation)
+- https://kartta.hel.fi/3d/#/
+
+
+
+## Tools
+### Generate cityjson from lidar and cadastrial information
+https://github.com/Yarroudh/Optim3D
 
