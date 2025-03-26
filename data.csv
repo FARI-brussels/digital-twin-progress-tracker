@@ -18,5 +18,5 @@ Vehicle Position Pony,The positions of Pony vehicles in Brussels,Pony,Telemetry,
 Vehicle Position Dott,The positions of Dott vehicles in Brussels,Dott,Telemetry,True,,GeoJSON,5 minutes,,DottVehiclePositionCollector,0
 Vehicle Position Bolt,The positions of Bolt vehicles in Brussels,Bolt,Telemetry,True,,GeoJSON,5 minutes,,BoltVehiclePositionCollector,0
 Weather,Weather and air quality data for Brussels (from OpenWeather & Irceline),OpenWeather,Telemetry,True,,GeoJSON,5 minutes,,OpenWeatherCollector,0
-Wheater and air quality irceline,Sensor Observation Service for irceline,Irceline,Telemetry,True,https://geo.irceline.be/sos/api/v1/,,,,,0
-Wheater and air quality sensors.community,realtime sensor observation api from sensors.community,sensors.community,Telemetry,False,https://maps.sensor.community/data/v2/data.dust.min.json,GeoJSON,5 minutes,,,1
+Wheater and air quality irceline,Sensor Observation Service for irceline see https://github.com/irceline/open_data?tab=readme-ov-file for more information,Irceline,Telemetry,True,https://geo.irceline.be/sos/api/v1/,GeoJSON,5 minutes,,IrcelineSOSCollector,0
+Wheater and air quality sensors.community,realtime sensor observation api from sensors.community see https://sensor.community/ for more information,sensors.community,Telemetry,False,https://maps.sensor.community/data/v2/data.dust.min.json,GeoJSON,5 minutes,,,1
