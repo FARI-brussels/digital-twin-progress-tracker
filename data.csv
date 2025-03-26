@@ -13,8 +13,10 @@ Segments,The segments of the STIB/MIVB network,STIB,Vector Data,True,,GeoJSON,un
 Stops,The stops of STIB/MIVB,STIB,Vector Data,True,,GeoJSON,Everyday at 00:20,,STIBStopsCollector,0
 Vehicle Distance,The distance of each STIB vehicle since the last stop,STIB,Telemetry,True,,JSON,20 seconds,,STIBVehiclePositionsCollector,0
 Shapefile,The shapefile of STIB/MIVB,STIB,Vector Data,True,,GeoJSON,Everyday at 03:20,,STIBShapeFilesCollector,0
-Vehicle Position Lime,The positions of Lime vehicles in Brussels,Lime,Vector Data,True,,GeoJSON,5 minutes,,LimeVehiclePositionCollector,0
-Vehicle Position Pony,The positions of Pony vehicles in Brussels,Pony,Vector Data,True,,GeoJSON,5 minutes,,PonyVehiclePositionCollector,0
-Vehicle Position Dott,The positions of Dott vehicles in Brussels,Dott,Vector Data,True,,GeoJSON,5 minutes,,DottVehiclePositionCollector,0
-Vehicle Position Bolt,The positions of Bolt vehicles in Brussels,Bolt,Vector Data,True,,GeoJSON,5 minutes,,BoltVehiclePositionCollector,0
-Weather,Weather and air quality data for Brussels (from OpenWeather & Irceline),OpenWeather,Vector Data,True,,GeoJSON,5 minutes,,OpenWeatherCollector,0
+Vehicle Position Lime,The positions of Lime vehicles in Brussels,Lime,Telemetry,True,,GeoJSON,5 minutes,,LimeVehiclePositionCollector,0
+Vehicle Position Pony,The positions of Pony vehicles in Brussels,Pony,Telemetry,True,,GeoJSON,5 minutes,,PonyVehiclePositionCollector,0
+Vehicle Position Dott,The positions of Dott vehicles in Brussels,Dott,Telemetry,True,,GeoJSON,5 minutes,,DottVehiclePositionCollector,0
+Vehicle Position Bolt,The positions of Bolt vehicles in Brussels,Bolt,Telemetry,True,,GeoJSON,5 minutes,,BoltVehiclePositionCollector,0
+Weather,Weather and air quality data for Brussels (from OpenWeather & Irceline),OpenWeather,Telemetry,True,,GeoJSON,5 minutes,,OpenWeatherCollector,0
+Wheater and air quality irceline,Sensor Observation Service for irceline,Irceline,Telemetry,True,https://geo.irceline.be/sos/api/v1/,,,,,0
+Wheater and air quality sensors.community,realtime sensor observation api from sensors.community,sensors.community,Telemetry,False,https://maps.sensor.community/data/v2/data.dust.min.json,GeoJSON,5 minutes,,,1
