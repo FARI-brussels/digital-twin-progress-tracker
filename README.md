@@ -41,10 +41,19 @@
 | One particular incident Fixmystreet       | These data represent an incident reported to FixMyStreet Brussels                                                                                                   | Fixmystreet       | Vector data | ❌ No          | https://fixmystreet.brussels/api/incidents/#id                                                                   | JSON             | nan                | nan                                  | nan                                |          3 |
 
 ## Geoservers 
-- ![urban brussels](https://gis.urban.brussels/geoserver/web/?0)
-- ![Bruxelles mobilité](https://data.mobility.brussels/geoserver/web/?1)
-- ![urbis](https://geoservices-urbis.irisnet.be/geoserver/web/)
-- Bruxelles environnement : ![WFS](https://wfs.environnement.brussels/belb?) ![WMS](https://wms.environnement.brussels/be_wms?)
+- [urban brussels](https://gis.urban.brussels/geoserver/web/?0)
+- [Bruxelles mobilité](https://data.mobility.brussels/geoserver/web/?1)
+- [urbis](https://geoservices-urbis.irisnet.be/geoserver/web/)
+- [urbis other](https://geoservices-others.irisnet.be/geoserver)
+- [parking brussels](https://data.parking.brussels/geoserver/web/)
+- Bruxelles environnement : [WFS](https://wfs.environnement.brussels/belb?) [WMS](https://wms.environnement.brussels/be_wms?)
+- [Commune de Jette](https://geoservices-others.irisnet.be/geoserver/UrbisAasArbre/wfs?Service=WFS&Version=2.0.0&Request=GetCapabilities)
+- [FPS Economy](https://data.geo.be/ws/dgstatistics)
+- [Federal geo](https://www.geo.be/catalogs)
+- [Could be intersting](https://wms.michelstuyts.be/?lang=en)
+
+https://www.geo.be/catalogs
+
 
 ## Implementation Status
 
