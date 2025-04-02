@@ -40,6 +40,12 @@
 | Incidents Fixmystreet                     | The data represents a list of incidents reported to FixMyStreet Brussels with details about each incident such as its unique ID status and geographical coordinates | Fixmystreet       | Vector data | ❌ No          | https://fixmystreet.brussels/api/incidents/map?startDate=YYYY-MM-DD&endDate=YYYY-MM-DD                           | JSON             | unknown            | nan                                  | nan                                |          3 |
 | One particular incident Fixmystreet       | These data represent an incident reported to FixMyStreet Brussels                                                                                                   | Fixmystreet       | Vector data | ❌ No          | https://fixmystreet.brussels/api/incidents/#id                                                                   | JSON             | nan                | nan                                  | nan                                |          3 |
 
+## Geoservers 
+- ![urban brussels](https://gis.urban.brussels/geoserver/web/?0)
+- ![Bruxelles mobilité](https://data.mobility.brussels/geoserver/web/?1)
+- ![urbis](https://geoservices-urbis.irisnet.be/geoserver/web/)
+- Bruxelles environnement : ![WFS](https://wfs.environnement.brussels/belb?) ![WMS](https://wms.environnement.brussels/be_wms?)
+
 ## Implementation Status
 
 ![Implementation Status](assets/implementation_chart.svg)
