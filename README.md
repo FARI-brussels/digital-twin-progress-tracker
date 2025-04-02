@@ -52,7 +52,8 @@
 - [Federal geo](https://www.geo.be/catalogs)
 - [Could be intersting](https://wms.michelstuyts.be/?lang=en)
 
-https://www.geo.be/catalogs
+There seem to be some additional data from brussels environnement that is not in the WFS. Maybe the following link is a api gateway that also contains other data sources. TO BE INVESTIGATED
+https://geodata.environnement.brussels/api/
 
 
 ## Implementation Status
