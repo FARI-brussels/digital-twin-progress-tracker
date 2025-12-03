@@ -15,6 +15,7 @@
 
 
 
+
 | Name                                      | Description                                                                                                                                                         | Provider          | Type        | Implemented   | Url                                                                                                              | Format           | Update frequency   | Harvester                            | Collector                          |   Priority |
 |:------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|:------------|:--------------|:-----------------------------------------------------------------------------------------------------------------|:-----------------|:-------------------|:-------------------------------------|:-----------------------------------|-----------:|
 | Vehicle Position                          | Real-time train positions                                                                                                                                           | SNCB              | Telemetry   | ✅ Yes         | nan                                                                                                              | GeoJSON          | 30 seconds         | SNCBVehiclePositionGeometryHarvester | nan                                |          0 |
@@ -42,7 +43,8 @@
 | One particular incident Fixmystreet       | These data represent an incident reported to FixMyStreet Brussels                                                                                                   | Fixmystreet       | Vector data | ❌ No          | https://fixmystreet.brussels/api/incidents/#id                                                                   | JSON             | On events          | nan                                  | nan                                |          3 |
 | Chantier en cours                         | The current worksite affecting brussels streets                                                                                                                     | BM                | Telemetry   | ❌ No          | https://be.brussels/fr/transport-mobilite/parking-et-routes/chantiers/info-trafic                                | JSON             | On events          | nan                                  | nan                                |        nan |
 | Chantier en cours vivaqua                 | The current worksite of vivaqua                                                                                                                                     | vivaqua           | Telemetry   | ❌ No          | https://chantiers.vivaqua.be/nos-chantiers/                                                                      | JSON             | On events          | nan                                  | nan                                |        nan |
-| Chantier en cours sibelga                 | The current worksite of sibelga                                                                                                                                     | sibelga           | Telemetry   | ❌ No          | https://www.sibelga.be/fr/pannes-chantiers/chantiers/liste-des-chantiers                                         | JSON             | On events          | nan                                  | nan                                |        nan |
+| Chantier en cours sibelga                 | The current worksite of sibelga                                                                                                                                     | sibelga           | Telemetry   | 0             | https://www.sibelga.be/fr/pannes-chantiers/chantiers/liste-des-chantiers                                         | JSON             | On events          | nan                                  | nan                                |        nan |
+| Villo station                             | Real time capacity of villo stations                                                                                                                                | JC decaux         | Telemetry   | 0             | https://developer.jcdecaux.com/                                                                                  | JSON             | nan                | nan                                  | nan                                |        nan |
 
 ## Geoservers 
 - [urban brussels](https://gis.urban.brussels/geoserver/web/?0)
@@ -64,7 +66,7 @@ https://geodata.environnement.brussels/api/
 
 ![Implementation Status](assets/implementation_chart.svg)
 
-**17 out of 26 resources implemented (65.38%)**
+**17 out of 27 resources implemented (62.96%)**
 
 ## Description
 
