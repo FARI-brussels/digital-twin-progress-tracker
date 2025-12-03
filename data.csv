@@ -1,4 +1,4 @@
-Name,Description,Provider,Type,Implemented,URL,Format,Update Frequency,Harvester,Collector,Priority
+﻿Name,Description,Provider,Type,Implemented,URL,Format,Update Frequency,Harvester,Collector,Priority
 Vehicle Position,Real-time train positions,SNCB,Telemetry,True,,GeoJSON,30 seconds,SNCBVehiclePositionGeometryHarvester,,0
 3D Constructions,LoD 2.2 3D construction,Paradigm,Mesh,False,https://datastore.brussels/web/data/dataset/e9ec2aa4-cffd-11ee-bccc-00090ffe0001#access,SHP/DWG/GPKG/SKP,1 month,,,1
 lidar brussels,LiDAR aérien – 2021,Paradigm,Point Cloud,False,https://datastore.brussels/web/data/dataset/ff1124e1-424e-11ee-b156-00090ffe0001#access,las,unknown,,,3
@@ -24,4 +24,5 @@ Incidents Fixmystreet,The data represents a list of incidents reported to FixMyS
 One particular incident Fixmystreet,These data represent an incident reported to FixMyStreet Brussels,Fixmystreet,Vector data,False,https://fixmystreet.brussels/api/incidents/#id,JSON,On events,,,3
 Chantier en cours,The current worksite affecting brussels streets,BM,Telemetry,False,https://be.brussels/fr/transport-mobilite/parking-et-routes/chantiers/info-trafic,JSON,On events,,,
 Chantier en cours vivaqua,The current worksite of vivaqua,vivaqua,Telemetry,False,https://chantiers.vivaqua.be/nos-chantiers/,JSON,On events,,,
-Chantier en cours sibelga,The current worksite of sibelga,sibelga,Telemetry,False,https://www.sibelga.be/fr/pannes-chantiers/chantiers/liste-des-chantiers,JSON,On events,,,
+Chantier en cours sibelga,The current worksite of sibelga,sibelga,Telemetry,0,https://www.sibelga.be/fr/pannes-chantiers/chantiers/liste-des-chantiers,JSON,On events,,,
+Villo station,Real time capacity of villo stations,JC decaux,Telemetry,0,https://developer.jcdecaux.com/,JSON
